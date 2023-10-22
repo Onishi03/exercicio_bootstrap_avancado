@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<style>
+    .navbar-nav .nav-link.active {
+        color: white;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    section {
+        background-color: #ccc;
+        padding-top: 70px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 2
+    }
+
+    .col-sm-12, .col-md-6, .col-lg-4 {
+    margin-bottom: 2rem;
+}
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    #filmes {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: white;
+        background-color: #ccc;
+    }
+</style>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Cinema</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filmes">Filmes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Filmes</h2>
+            <!--Carousel Start-->
+            <div id="carousel-example" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://img.ecartelera.com/noticias/74000/74051-h2.jpg">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://poltronanerd.com.br/wp-content/uploads/2018/07/poltrona-a-freira-18jul18-2.jpg">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36005C50CB353A9920C09C34397E4F991C4886940EABEF78EA26993CE0B94509/scale?width=1200&aspectRatio=1.78&format=jpeg">
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-example" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-example" data-bs-slide="next" class="carousel-control-next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-example" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2"></button>
+                </div>
+        </section>
+        <!--Carousel End-->
+
+        <!--Grid Start-->
+        <section id="filmes">
+            <h2>Lançamentos 2023</h2>
+            <div class="container">
+                <div class="row">
+                    <!--Card1-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">
+                                Em Cartaz
+                            </header>
+                            <img src="https://th.bing.com/th/id/R.daaea747ef15ff359234c56d06f7ca7a?rik=ctmGrYV0SzyIXA&riu=http%3a%2f%2fcineacessivel.com.br%2fuploads%2fmovies%2fbarbie1684419321.jpg&ehk=9IS%2bNjxCzDzkFttwjx0MGe%2f5ti9gHXkrhMCLVO6ief0%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Barbie - O filme">
+                            <div class="card-body">
+                                <h4 class="card-title">Barbie</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsam eos
+                                    laudantium quibusdam minus maiores dolorum quos delectus ea, minima, nam voluptates
+                                    unde esse eaque praesentium libero commodi non.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>21/10/2023 as 19:52:00</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <!--Card1-->
+
+                    <!--Card2-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">
+                                Em Cartaz
+                            </header>
+                            <img src="https://th.bing.com/th/id/OIP.qJKNhGEm1vUVxANwTUTxKgHaK-?pid=ImgDet&rs=1"
+                                alt="A Freira">
+                            <div class="card-body">
+                                <h4 class="card-title">A Freira 2</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsam eos
+                                    laudantium quibusdam minus maiores dolorum quos delectus ea, minima, nam voluptates
+                                    unde esse eaque praesentium libero commodi non.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>21/10/2023 as 19:52:00</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <!--Card2-->
+
+                    <!--Card3-->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                            <header class="card-header">
+                                Em Breve
+                            </header>
+                            <img src="https://www.themoviedb.org/t/p/original/pbeK8zvKq2h1FGHkgC8ADUnk9uR.jpg"
+                                alt="Loucas em apuros">
+                            <div class="card-body">
+                                <h4 class="card-title">The Marvels</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsam eos
+                                    laudantium quibusdam minus maiores dolorum quos delectus ea, minima, nam voluptates
+                                    unde esse eaque praesentium libero commodi non.
+                                </p>
+                                <a href="#" class="btn btn-primary">Leia mais</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>21/10/2023 as 19:52:00</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <!--Card3-->
+                </div>
+            </div>
+        </section>
+        <!--Grid Start-->
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            © 2023 Todos os direitos reservados:
+            <a class="text-dark" href="">Filmes</a>
+        </div>
+    </footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
